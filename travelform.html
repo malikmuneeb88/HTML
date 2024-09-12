@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Vacation Booking Form</h1>
+
+    <form action="submit-booking.html" method="post">
+        <!-- Personal Information -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <!-- Destination -->
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="">--Select Destination--</option>
+            <option value="paris">Paris</option>
+            <option value="newyork">New York</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="sydney">Sydney</option>
+            <option value="rome">Rome</option>
+        </select>
+
+        <!-- Travel Dates -->
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure" name="departure" required>
+
+        <label for="return">Return Date:</label>
+        <input type="date" id="return" name="return" required>
+
+        <!-- Package Type -->
+        <label for="package">Select Package:</label>
+        <input type="radio" id="standard" name="package" value="standard" required>
+        <label for="standard" style="display: inline;">Standard</label>
+        <input type="radio" id="premium" name="package" value="premium">
+        <label for="premium" style="display: inline;">Premium</label>
+
+        <!-- Additional Requests -->
+        <label for="requests">Additional Requests (Optional):</label>
+        <textarea id="requests" name="requests" rows="4"></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Book Vacation">
+
+    </form>
+
+</body>
+</html>
+
