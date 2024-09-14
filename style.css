@@ -2,6 +2,10 @@
     background-color: aqua;
 }
 .bg-blue{
-    background-color: rgb(241, 100, 110);
+    background-color: #f1646e;
     color: white;
+}
+
+.head{
+    background-color: wheat;
 }
