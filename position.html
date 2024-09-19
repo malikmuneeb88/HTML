@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        *{
+        /**{
             margin: 0;
             padding: 0;
-        }
+        }*/
         li{
-            display: inline;
-            
+            /*display: inline;*/
+            list-style: square;
         }
+            
         header{
             background-color: black;
             color: white;
-            height: 30px;
+            height: 60px;
         }
         p{
             text-align: center;
@@ -28,11 +29,22 @@
             height: 50vh;
             width: 50vw;
             margin: auto;
+            padding: 0 34px;
         }
         .box{
-            height: 200px;
+            height: 100px;
             width: 200px;
             background-color: cadetblue;
+            position: relative;
+            top: 15px;
+            left: 40px;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(139, 95, 160);
+            position: relative;
+            top: 40px; 
         }
     </style>
 </head>
@@ -50,6 +62,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est porro eius dolores incidunt quas nulla perspiciatis neque quod, reiciendis nam, commodi tempore in officiis sint veniam quisquam rerum beatae!</p>
         <div class="box">
             I am a Box.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi eaque dignissimos inventore sed ab, dicta natus at odit obcaecati accusamus minus ut modi optio placeat aut ullam necessitatibus soluta?
         </div>
     </div>
 </body>
