@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Practice Set Question 2 using flex</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            padding: 30px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 30px;
+            
+        }
+        header{
+            background-color: black;
+            color: white;
+            
+        }
+        .left{
+            height: 60vh;
+            width: 40vw;
+            background-color: beige;
+            
+        }
+        .right{
+            height: 60vh;
+            width: 40vw;
+            background-color: aqua;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }    
+    </Style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>    
+    </header>
+    <div class="container">
+<div class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores modi, quas iste tempore perferendis laborum eius nam magni mollitia, eum sit exercitationem molestiae iusto rem a, nulla undepossimus? Asperiores.</div>
+<div class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempora amet consequatur earum voluptatum aliquam maxime sint, dolor ipsa voluptatibus harum quia deleniti voluptas a voluptatesea voluptate perferendis deserunt dolore rem officiis debitis quaerat nostrum. Quibusdam eligendi recusandae voluptate!</div>
+    </div>
+</body>
+</html>
