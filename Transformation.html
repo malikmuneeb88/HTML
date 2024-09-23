@@ -19,10 +19,13 @@
         }
         img{
             width: 344px;
-            transition-property: width;
+            height: 350px;
+            /*transition-property: width;
             transition-duration: 1s;
             transition-timing-function: ease-in;
-        }
+            transition-delay: 1s;*/
+            transition: width 1s ease-in-out, height 4s ease-in;
+        }                                                                   
         /*img:hover{
             width: 56px;
         }*/
@@ -31,15 +34,17 @@
 <body>
     <div class="container">
         <div class="box">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&s">
+            <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&s">
             <button id="btn">Toggle</button>
         </div>
     </div>    
 </body>
 <script>
-    myImage.style.width = '146px';
+    myImage.style.width = '146px'; 
+    myImage.style.height = '16px';
 
     btn.addEventListener("click", ()=>{
+        myImage.style.height = '456px';
         if(myImage.style.width === '546px'){
             myImage.style.width = "146px";
         }
