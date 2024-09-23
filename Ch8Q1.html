@@ -39,19 +39,67 @@
                 transform: rotate(0deg);
             }
             100%{
-                transform: rotate(360deg);
+                transform: rotate(360deg);  
             }
         }  
-        img{
+        @keyframes slide1 {
+            0%{
+                transform: translate(-10vw);
+            }
+            100%{
+                transform: translate(85vw);
+            }
+        }
+
+        @keyframes slide2 {
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform: translate(90vw);
+            }
+        }
+        /*img{
             animation: rotate 1s ease-in infinite;
-        }  
+        }  */
+        img{
+            display: block;
+            margin: auto;
+        }
+        .slider{
+            background-color: white;
+            height: 70vh;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .img1{
+            transform: translate(-10vw);
+            animation: slide1 2s 1s forwards; 
+
+        }
+        .img2{
+            transform: translate(0vw);
+            animation: slide2 2s 1s forwards; 
+        }
+        .img3{
+            transform: translate(8vw);
+        }
+        
     </style>
 </head>
 <body>
     <div class="progress"></div>
     <header></header>
     <main>
-        <img src="https://cdn.pixabay.com/photo/2016/10/07/15/47/dragon-1721875_1280.png" alt="" width="130px">
+        <div class="slider">
+            <img class="img1" src="https://images.unsplash.com/photo-1620553967899-7b24032a3b6f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvdXJjZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <img class="img2" src="https://images.unsplash.com/photo-1620553967899-7b24032a3b6f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvdXJjZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <img class="img3" src="https://images.unsplash.com/photo-1620553967899-7b24032a3b6f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvdXJjZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <!-- <img src="https://cdn.pixabay.com/photo/2016/10/07/15/47/dragon-1721875_1280.png" alt="" width="130px"> -->
     </main>
 </body>
+<script></script>
 </html>
